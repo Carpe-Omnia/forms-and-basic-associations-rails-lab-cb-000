@@ -11,7 +11,7 @@
 
   <datalist id="genres_autocomplete">
     <% Genre.all.each do |genre| %>
-      <option value="<%= genre.name %>" >
+      <option value="<%= genre.id %>" id="<%=genre.name%>" >
     <% end %>
   </datalist>
 
