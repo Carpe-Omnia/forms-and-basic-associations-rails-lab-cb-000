@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
       self.notes << note
     end
   end
-  def notes_contents
+  def note_contents
     self.notes.collect do |note|
       note.content
     end
