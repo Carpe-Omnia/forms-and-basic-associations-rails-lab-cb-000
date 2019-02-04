@@ -9,7 +9,7 @@
   <%= f.text_field :genre_id, list: "genres_autocomplete " %>
   <datalist id="genres_autocomplete">
     <% Genre.all.each do |genre|
-      <%= option value="<%= genre.id %>"%>
+      < option value="<%= genre.id %>" >
     <% end %>
   </datalist>
   <input name="song[notes][]" id="song_notes_1">
